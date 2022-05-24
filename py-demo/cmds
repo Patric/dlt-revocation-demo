@@ -1,0 +1,7 @@
+# acitvate local env
+Scripts/activate.bat
+
+pip install -r ../requirements.txt 
+
+# to save
+pip freeze > ../requirements.txt  
