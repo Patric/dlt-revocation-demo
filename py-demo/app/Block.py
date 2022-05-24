@@ -3,6 +3,7 @@ from utils.crypto import calculateHash
 from utils.json import *
 from utils.Printable import *
 
+# rename? place into a folder?
 class Block(Printable):
 
     def __init__(self, idx: int, encryptedMetadata: string, previousBlockHash: string):

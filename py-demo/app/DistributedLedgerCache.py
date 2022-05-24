@@ -1,8 +1,8 @@
 from Block import Block
-from typing import List, Sized
+from typing import List
 
 # create a simple model DTO that can be converted to a json file and sent back and forth
-class DistributedLedger(Sized):
+class DistributedLedgerCache():
     
     def __init__(self, blockchain: List[Block]):
         self.__blockchain = blockchain
