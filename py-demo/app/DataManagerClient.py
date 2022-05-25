@@ -1,3 +1,4 @@
+from this import d
 from DataManager import DataManger
 from DataManagerProviders import *
 
@@ -21,3 +22,14 @@ class DataManagerClient:
 
     def getPublicKey(self):
         return self.__publicKey
+
+    #TODO: in scope of current task
+
+    def grantAccessToData(self, someDataId):
+        pass
+
+    def revokeAccessToData(self, someDataId):
+        pass
+
+    def emergencyDataRevokation(self):
+        pass
