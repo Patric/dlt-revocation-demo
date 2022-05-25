@@ -15,3 +15,7 @@ def transaction_to_bytes(transaction_data: dict):
     new_transaction_data["receiver"] = str(transaction_data["receiver"])
     new_transaction_data["coin_id"] = str(transaction_data["coin_id"])
     return json.dumps(new_transaction_data, indent=2).encode('utf-8')
+
+def encrypt(data, publicKey) -> str:
+    # use asymmetric encryption
+    return calculateHash(data)
